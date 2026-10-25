@@ -4,20 +4,12 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    [SerializeField]
-    int speed = 5;
-    [SerializeField]
-    float range = 2f;
-
-    private Rigidbody2D rb;
+    [SerializeField] int speed = 5;
+    [SerializeField] float range = 1.5f;
 
     void Start()
     {
-        /*GetComponent<Rigidbody2D>().linearVelocity = Vector2.left * speed;
-
-        transform.position = new Vector2(transform.position.x,transform.position.y *  range * Random.value);*/
-
-        rb = GetComponent<Rigidbody2D>();
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = Vector2.left * speed;
 
         float randomY = Random.Range(-range, range);
@@ -27,12 +19,11 @@ public class MoveLeft : MonoBehaviour
             transform.position.y + randomY,
             transform.position.z
         );
+
     }
 
     public void DestroyPipes()
     {
         Destroy(gameObject);
     }
-
-    
 }
