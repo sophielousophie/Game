@@ -316,7 +316,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -611,8 +611,8 @@ Transform:
   m_GameObject: {fileID: 545063426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.9522, y: 6.0872, z: 10}
-  m_LocalScale: {x: 1.1791836, y: 1.4563506, z: 1}
+  m_LocalPosition: {x: -13.66, y: 0.37, z: 10}
+  m_LocalScale: {x: 0.47556472, y: 0.5905501, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -921,8 +921,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1096,7 +1096,7 @@ Transform:
   m_GameObject: {fileID: 911000245}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.13, y: -0.55, z: 0}
+  m_LocalPosition: {x: -16.22, y: -0.55, z: 0}
   m_LocalScale: {x: 1.2519, y: 1.2519, z: 1.2519}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1201,8 +1201,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
