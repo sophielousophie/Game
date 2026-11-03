@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(AudioSource))]
 
 
 public class BirdDead : MonoBehaviour
 {
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Pipes"))
@@ -36,9 +38,10 @@ public class BirdDead : MonoBehaviour
                 Gm.BestScore = Gm.Score;
             }
 
-            if(GameObject.Find("TxtReplay")!=null)
-            GameObject.Find("TxtReplay").GetComponent<Text>().enabled = true;
-
+            if (GameObject.Find("TxtReplay") != null)
+            {
+                GameObject.Find("TxtReplay").GetComponent<TMP_Text>().enabled = true;
+            }
             
         }
     }
