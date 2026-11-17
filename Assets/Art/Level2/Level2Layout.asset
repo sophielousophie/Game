@@ -1,0 +1,1481 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132287a1808abbd4bbb5459b780d7e87, type: 3}
+  m_Name: Level2Layout
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::Level2Layout
+  playerSpeed: 3.2
+  duration: 105
+  sections:
+  - name: 01_Beach
+    length: 64
+    build: 1
+    elements:
+    - name: CoastalStairs
+      group: 0
+      prefab: {fileID: 3781264585332357049, guid: c564556b6df8d0b46ad5f41a579802a7, type: 3}
+      position: {x: 4.4, y: -0.9, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalGround
+      group: 0
+      prefab: {fileID: 2508962085903694952, guid: ce4659250f24925428999391d39bd339, type: 3}
+      position: {x: 36.4, y: 1.5, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 55.2, y: 1, z: 1}
+    - name: Rock_01_FirstJump
+      group: 4
+      prefab: {fileID: 8197251659544710313, guid: 10b647fb3e9d1c047b75af57459c2441, type: 3}
+      position: {x: 18, y: 1.74, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shell_01_PLACEHOLDER
+      group: 4
+      prefab: {fileID: 172992526388715216, guid: e045befc3fd545e42be7f6cfb0b9e6b0, type: 3}
+      position: {x: 26, y: 1.615, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bubble_01_PLACEHOLDER
+      group: 4
+      prefab: {fileID: 8310112034366520398, guid: d3aa80e9340e1654584f6a7931ca9ced, type: 3}
+      position: {x: 34, y: 2.02, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Puddle_01_PLACEHOLDER
+      group: 4
+      prefab: {fileID: 6114180490305463508, guid: be6279846b17d4c48848d95c63367cb3, type: 3}
+      position: {x: 42, y: 1.68, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FishWave_01_PLACEHOLDER
+      group: 5
+      prefab: {fileID: 9158215080144770487, guid: 1c1f857b26d3f6542a82aa31f6c66c25, type: 3}
+      position: {x: 54, y: 2.05, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Steps_Bush
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 3.5, y: 0.04, z: 1.4}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0.65, y: 0.65, z: 0.65}
+    - name: Steps_Grass
+      group: 1
+      prefab: {fileID: 8893064291466721711, guid: 03dec65df706065488956580c3a47dbe, type: 3}
+      position: {x: 6.6, y: 0.96, z: 1.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bush_01
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 9.8, y: 1.5, z: 0.78}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0.84, y: 0.84, z: 0.84}
+    - name: GrassTuft_02
+      group: 1
+      prefab: {fileID: 8893064291466721711, guid: 03dec65df706065488956580c3a47dbe, type: 3}
+      position: {x: 11.7, y: 1.5, z: 1.24}
+      rotation: {x: 0, y: 31, z: 0}
+      scale: {x: 0.91999996, y: 0.91999996, z: 0.91999996}
+    - name: Flower_PLACEHOLDER_03
+      group: 1
+      prefab: {fileID: 183818039584774112, guid: cc12e601d4a510f4ca1c7233182913b7, type: 3}
+      position: {x: 13.6, y: 1.5, z: 1.7}
+      rotation: {x: 0, y: 62, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pebbles_04
+      group: 1
+      prefab: {fileID: 6244057812186385587, guid: 3d60fd843edaa4443b992dfbce9da45e, type: 3}
+      position: {x: 15.5, y: 1.5, z: 0.78}
+      rotation: {x: 0, y: 93, z: 0}
+      scale: {x: 1.0799999, y: 1.0799999, z: 1.0799999}
+    - name: Shrub_05
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 17.4, y: 1.5, z: 1.24}
+      rotation: {x: 0, y: 124, z: 0}
+      scale: {x: 1.16, y: 1.16, z: 1.16}
+    - name: GrassTuft_06
+      group: 1
+      prefab: {fileID: 8893064291466721711, guid: 03dec65df706065488956580c3a47dbe, type: 3}
+      position: {x: 19.3, y: 1.5, z: 1.7}
+      rotation: {x: 0, y: 155, z: 0}
+      scale: {x: 0.84, y: 0.84, z: 0.84}
+    - name: GrassPatch_07
+      group: 1
+      prefab: {fileID: 6852805324656134855, guid: 22220bd5d07cfd14992ac7ad15a82cf1, type: 3}
+      position: {x: 21.2, y: 1.5, z: 0.78}
+      rotation: {x: 0, y: 186, z: 0}
+      scale: {x: 0.91999996, y: 0.91999996, z: 0.91999996}
+    - name: Flower_PLACEHOLDER_08
+      group: 1
+      prefab: {fileID: 183818039584774112, guid: cc12e601d4a510f4ca1c7233182913b7, type: 3}
+      position: {x: 23.1, y: 1.5, z: 1.24}
+      rotation: {x: 0, y: 217, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DirtPatch_09
+      group: 1
+      prefab: {fileID: 6236015049080023366, guid: 43e539e87cb1747458925c4c06c8011e, type: 3}
+      position: {x: 25, y: 1.5, z: 1.7}
+      rotation: {x: 0, y: 248, z: 0}
+      scale: {x: 1.0799999, y: 1.0799999, z: 1.0799999}
+    - name: Bush_10
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 26.9, y: 1.5, z: 0.78}
+      rotation: {x: 0, y: 279, z: 0}
+      scale: {x: 1.16, y: 1.16, z: 1.16}
+    - name: GrassTuft_11
+      group: 1
+      prefab: {fileID: 8893064291466721711, guid: 03dec65df706065488956580c3a47dbe, type: 3}
+      position: {x: 28.8, y: 1.5, z: 1.24}
+      rotation: {x: 0, y: 310, z: 0}
+      scale: {x: 0.84, y: 0.84, z: 0.84}
+    - name: Flower_PLACEHOLDER_12
+      group: 1
+      prefab: {fileID: 183818039584774112, guid: cc12e601d4a510f4ca1c7233182913b7, type: 3}
+      position: {x: 30.7, y: 1.5, z: 1.7}
+      rotation: {x: 0, y: 341, z: 0}
+      scale: {x: 0.91999996, y: 0.91999996, z: 0.91999996}
+    - name: Pebbles_13
+      group: 1
+      prefab: {fileID: 6244057812186385587, guid: 3d60fd843edaa4443b992dfbce9da45e, type: 3}
+      position: {x: 32.6, y: 1.5, z: 0.78}
+      rotation: {x: 0, y: 372, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shrub_14
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 34.5, y: 1.5, z: 1.24}
+      rotation: {x: 0, y: 403, z: 0}
+      scale: {x: 1.0799999, y: 1.0799999, z: 1.0799999}
+    - name: GrassTuft_15
+      group: 1
+      prefab: {fileID: 8893064291466721711, guid: 03dec65df706065488956580c3a47dbe, type: 3}
+      position: {x: 36.4, y: 1.5, z: 1.7}
+      rotation: {x: 0, y: 434, z: 0}
+      scale: {x: 1.16, y: 1.16, z: 1.16}
+    - name: GrassPatch_16
+      group: 1
+      prefab: {fileID: 6852805324656134855, guid: 22220bd5d07cfd14992ac7ad15a82cf1, type: 3}
+      position: {x: 38.3, y: 1.5, z: 0.78}
+      rotation: {x: 0, y: 465, z: 0}
+      scale: {x: 0.84, y: 0.84, z: 0.84}
+    - name: Flower_PLACEHOLDER_17
+      group: 1
+      prefab: {fileID: 183818039584774112, guid: cc12e601d4a510f4ca1c7233182913b7, type: 3}
+      position: {x: 40.2, y: 1.5, z: 1.24}
+      rotation: {x: 0, y: 496, z: 0}
+      scale: {x: 0.91999996, y: 0.91999996, z: 0.91999996}
+    - name: DirtPatch_18
+      group: 1
+      prefab: {fileID: 6236015049080023366, guid: 43e539e87cb1747458925c4c06c8011e, type: 3}
+      position: {x: 42.1, y: 1.5, z: 1.7}
+      rotation: {x: 0, y: 527, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bush_19
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 44, y: 1.5, z: 0.78}
+      rotation: {x: 0, y: 558, z: 0}
+      scale: {x: 1.0799999, y: 1.0799999, z: 1.0799999}
+    - name: GrassTuft_20
+      group: 1
+      prefab: {fileID: 8893064291466721711, guid: 03dec65df706065488956580c3a47dbe, type: 3}
+      position: {x: 45.9, y: 1.5, z: 1.24}
+      rotation: {x: 0, y: 589, z: 0}
+      scale: {x: 1.16, y: 1.16, z: 1.16}
+    - name: Flower_PLACEHOLDER_21
+      group: 1
+      prefab: {fileID: 183818039584774112, guid: cc12e601d4a510f4ca1c7233182913b7, type: 3}
+      position: {x: 47.8, y: 1.5, z: 1.7}
+      rotation: {x: 0, y: 620, z: 0}
+      scale: {x: 0.84, y: 0.84, z: 0.84}
+    - name: Pebbles_22
+      group: 1
+      prefab: {fileID: 6244057812186385587, guid: 3d60fd843edaa4443b992dfbce9da45e, type: 3}
+      position: {x: 49.7, y: 1.5, z: 0.78}
+      rotation: {x: 0, y: 651, z: 0}
+      scale: {x: 0.91999996, y: 0.91999996, z: 0.91999996}
+    - name: Shrub_23
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 51.6, y: 1.5, z: 1.24}
+      rotation: {x: 0, y: 682, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GrassTuft_24
+      group: 1
+      prefab: {fileID: 8893064291466721711, guid: 03dec65df706065488956580c3a47dbe, type: 3}
+      position: {x: 53.5, y: 1.5, z: 1.7}
+      rotation: {x: 0, y: 713, z: 0}
+      scale: {x: 1.0799999, y: 1.0799999, z: 1.0799999}
+    - name: GrassPatch_25
+      group: 1
+      prefab: {fileID: 6852805324656134855, guid: 22220bd5d07cfd14992ac7ad15a82cf1, type: 3}
+      position: {x: 55.4, y: 1.5, z: 0.78}
+      rotation: {x: 0, y: 744, z: 0}
+      scale: {x: 1.16, y: 1.16, z: 1.16}
+    - name: Flower_PLACEHOLDER_26
+      group: 1
+      prefab: {fileID: 183818039584774112, guid: cc12e601d4a510f4ca1c7233182913b7, type: 3}
+      position: {x: 57.3, y: 1.5, z: 1.24}
+      rotation: {x: 0, y: 775, z: 0}
+      scale: {x: 0.84, y: 0.84, z: 0.84}
+    - name: DirtPatch_27
+      group: 1
+      prefab: {fileID: 6236015049080023366, guid: 43e539e87cb1747458925c4c06c8011e, type: 3}
+      position: {x: 59.2, y: 1.5, z: 1.7}
+      rotation: {x: 0, y: 806, z: 0}
+      scale: {x: 0.91999996, y: 0.91999996, z: 0.91999996}
+    - name: Sea_0_00
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -31, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_01
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -22.85, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_02
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -14.700001, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_03
+      group: 2
+      prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
+      position: {x: -6.550001, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_04
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 1.5999985, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_05
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 9.749998, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_06
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 17.899998, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_07
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 26.049997, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_08
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 34.199997, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_09
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 42.35, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_10
+      group: 2
+      prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
+      position: {x: 50.499996, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_11
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 58.649994, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_12
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 66.799995, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_00
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -26.925, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_01
+      group: 2
+      prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
+      position: {x: -18.775002, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_02
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -10.625001, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_03
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -2.4750013, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_04
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 5.6749983, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_05
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 13.824998, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_06
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 21.974998, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_07
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 30.124996, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_08
+      group: 2
+      prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
+      position: {x: 38.274998, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_09
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 46.424995, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_10
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 54.574997, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_11
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 62.724995, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_12
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 70.87499, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_00
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -31, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_01
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -22.85, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_02
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -14.700001, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_03
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -6.550001, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_04
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 1.5999985, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_05
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 9.749998, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_06
+      group: 3
+      prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
+      position: {x: 17.899998, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_07
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 26.049997, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_08
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 34.199997, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_09
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 42.35, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_10
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 50.499996, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_11
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 58.649994, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_12
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 66.799995, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_00
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -26.925, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_01
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -18.775002, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_02
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -10.625001, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_03
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -2.4750013, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_04
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 5.6749983, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_05
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 13.824998, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_06
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 21.974998, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_07
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 30.124996, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_08
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 38.274998, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_09
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 46.424995, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_10
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 54.574997, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_11
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 62.724995, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_12
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 70.87499, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_00
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -31, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_01
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -22.85, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_02
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -14.700001, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_03
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -6.550001, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_04
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 1.5999985, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_05
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 9.749998, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_06
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 17.899998, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_07
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 26.049997, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_08
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 34.199997, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_09
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 42.35, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_10
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 50.499996, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_11
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 58.649994, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_12
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 66.799995, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_00
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -10, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_01
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -1.8500004, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_02
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 6.299999, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_03
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 14.449999, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_04
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 22.599998, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_05
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 30.749998, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_06
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 38.899998, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_07
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 47.049995, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_08
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 55.199997, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_09
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 63.35, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_10
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 71.5, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_00
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: -5.925, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_01
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 2.2249994, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_02
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 10.374999, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_03
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 18.524998, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_04
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 26.675, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_05
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 34.824997, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_06
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 42.975, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_07
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 51.124996, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_08
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 59.274998, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_09
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 67.424995, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_10
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 75.575, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Buoy_01
+      group: 2
+      prefab: {fileID: 4604014830793804208, guid: 8e56c9941b6f8de45bc4617caa67e932, type: 3}
+      position: {x: 3, y: -0.93, z: 6.2}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Buoy_02
+      group: 2
+      prefab: {fileID: 4604014830793804208, guid: 8e56c9941b6f8de45bc4617caa67e932, type: 3}
+      position: {x: 37, y: -0.93, z: 10.6}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Checkpoint_S1_End
+      group: 6
+      prefab: {fileID: 7943488235979793753, guid: 9fa43500f9f4b4b48aa648ed8a98da7a, type: 3}
+      position: {x: 61.8, y: 2.12, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Section1PreviewEnd
+      group: 7
+      prefab: {fileID: 1829889745750682989, guid: 79856aa15fa22b74fbc0dc1caa1f2f6e, type: 3}
+      position: {x: 63.4, y: 1.5, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalWalkableSurface
+      group: 0
+      prefab: {fileID: 265546114881104903, guid: 78a727c29a7e86b46bfd6c6c91d3922a, type: 3}
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_13
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 74.95, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_14
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 83.09999, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_15
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 91.24999, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_0_16
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 99.399994, y: -1.28, z: 4.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_13
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 79.024994, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_14
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 87.174995, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_15
+      group: 2
+      prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
+      position: {x: 95.325, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_1_16
+      group: 2
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 103.47499, y: -1.28, z: 10.7}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_13
+      group: 3
+      prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
+      position: {x: 74.95, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_14
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 83.09999, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_15
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 91.24999, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_2_16
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 99.399994, y: -1.28, z: 16.9}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_13
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 79.024994, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_14
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 87.174995, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_15
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 95.325, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_3_16
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 103.47499, y: -1.28, z: 23.099998}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_13
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 74.95, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_14
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 83.09999, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_15
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 91.24999, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sea_4_16
+      group: 3
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 99.399994, y: -1.28, z: 29.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_0_11
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 79.649994, y: -1.43, z: -8.1}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreWater_1_11
+      group: 1
+      prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
+      position: {x: 83.725, y: -1.43, z: -1.9000006}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_01_01
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 11.5, y: 1.5, z: 2.34}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_01_02
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 13.28, y: 1.5, z: 2.34}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_01_03
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 15.059999, y: 1.5, z: 2.34}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_02_01
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 21.2, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_02_02
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 22.980001, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_03_01
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 30.6, y: 1.5, z: 2.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_03_02
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 32.38, y: 1.5, z: 2.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_03_03
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 34.16, y: 1.5, z: 2.3}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_04_01
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 44.5, y: 1.5, z: 2.32}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_04_02
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 46.28, y: 1.5, z: 2.32}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_04_03
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 48.06, y: 1.5, z: 2.32}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_04_04
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 49.84, y: 1.5, z: 2.32}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_05_01
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 56.8, y: 1.5, z: 2.2}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalFence_05_02
+      group: 1
+      prefab: {fileID: 3062184033532748871, guid: b4bd456ad7611cd4a954401a7353ea9f, type: 3}
+      position: {x: 58.579998, y: 1.5, z: 2.2}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalGrove_Tree_00
+      group: 1
+      prefab: {fileID: 8569633888848201884, guid: 1f6fcf9b83000ed48978ee97fcce8b50, type: 3}
+      position: {x: 10.1, y: 1.5, z: 2.04}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0.62, y: 0.62, z: 0.62}
+    - name: CoastalGrove_Shrub_00
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 11.02, y: 1.5, z: 1.94}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0.72, y: 0.72, z: 0.72}
+    - name: CoastalGrove_Bush_00
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 9.490001, y: 1.5, z: 1.61}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0.66, y: 0.66, z: 0.66}
+    - name: CoastalGrove_Tree_01
+      group: 1
+      prefab: {fileID: 8569633888848201884, guid: 1f6fcf9b83000ed48978ee97fcce8b50, type: 3}
+      position: {x: 16.1, y: 1.5, z: 2.04}
+      rotation: {x: 0, y: 37, z: 0}
+      scale: {x: 0.77, y: 0.77, z: 0.77}
+    - name: CoastalGrove_Shrub_01
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 15.18, y: 1.5, z: 1.94}
+      rotation: {x: 0, y: 61, z: 0}
+      scale: {x: 0.86, y: 0.86, z: 0.86}
+    - name: CoastalGrove_Bush_01
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 16.710001, y: 1.5, z: 1.61}
+      rotation: {x: 0, y: 47, z: 0}
+      scale: {x: 0.66, y: 0.66, z: 0.66}
+    - name: CoastalGrove_Tree_02
+      group: 1
+      prefab: {fileID: 8569633888848201884, guid: 1f6fcf9b83000ed48978ee97fcce8b50, type: 3}
+      position: {x: 23.8, y: 1.5, z: 2.04}
+      rotation: {x: 0, y: 74, z: 0}
+      scale: {x: 0.92, y: 0.92, z: 0.92}
+    - name: CoastalGrove_Shrub_02
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 24.72, y: 1.5, z: 1.94}
+      rotation: {x: 0, y: 122, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalGrove_Bush_02
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 23.189999, y: 1.5, z: 1.61}
+      rotation: {x: 0, y: 94, z: 0}
+      scale: {x: 0.66, y: 0.66, z: 0.66}
+    - name: CoastalGrove_Tree_03
+      group: 1
+      prefab: {fileID: 8569633888848201884, guid: 1f6fcf9b83000ed48978ee97fcce8b50, type: 3}
+      position: {x: 29, y: 1.5, z: 2.04}
+      rotation: {x: 0, y: 111, z: 0}
+      scale: {x: 0.62, y: 0.62, z: 0.62}
+    - name: CoastalGrove_Shrub_03
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 28.08, y: 1.5, z: 1.94}
+      rotation: {x: 0, y: 183, z: 0}
+      scale: {x: 0.72, y: 0.72, z: 0.72}
+    - name: CoastalGrove_Bush_03
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 29.61, y: 1.5, z: 1.61}
+      rotation: {x: 0, y: 141, z: 0}
+      scale: {x: 0.66, y: 0.66, z: 0.66}
+    - name: CoastalGrove_Tree_04
+      group: 1
+      prefab: {fileID: 8569633888848201884, guid: 1f6fcf9b83000ed48978ee97fcce8b50, type: 3}
+      position: {x: 37.4, y: 1.5, z: 2.04}
+      rotation: {x: 0, y: 148, z: 0}
+      scale: {x: 0.77, y: 0.77, z: 0.77}
+    - name: CoastalGrove_Shrub_04
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 38.32, y: 1.5, z: 1.94}
+      rotation: {x: 0, y: 244, z: 0}
+      scale: {x: 0.86, y: 0.86, z: 0.86}
+    - name: CoastalGrove_Bush_04
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 36.79, y: 1.5, z: 1.61}
+      rotation: {x: 0, y: 188, z: 0}
+      scale: {x: 0.66, y: 0.66, z: 0.66}
+    - name: CoastalGrove_Tree_05
+      group: 1
+      prefab: {fileID: 8569633888848201884, guid: 1f6fcf9b83000ed48978ee97fcce8b50, type: 3}
+      position: {x: 46.5, y: 1.5, z: 2.04}
+      rotation: {x: 0, y: 185, z: 0}
+      scale: {x: 0.92, y: 0.92, z: 0.92}
+    - name: CoastalGrove_Shrub_05
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 45.58, y: 1.5, z: 1.94}
+      rotation: {x: 0, y: 305, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CoastalGrove_Bush_05
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 47.11, y: 1.5, z: 1.61}
+      rotation: {x: 0, y: 235, z: 0}
+      scale: {x: 0.66, y: 0.66, z: 0.66}
+    - name: CoastalGrove_Tree_06
+      group: 1
+      prefab: {fileID: 8569633888848201884, guid: 1f6fcf9b83000ed48978ee97fcce8b50, type: 3}
+      position: {x: 52, y: 1.5, z: 2.04}
+      rotation: {x: 0, y: 222, z: 0}
+      scale: {x: 0.62, y: 0.62, z: 0.62}
+    - name: CoastalGrove_Shrub_06
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 52.92, y: 1.5, z: 1.94}
+      rotation: {x: 0, y: 366, z: 0}
+      scale: {x: 0.72, y: 0.72, z: 0.72}
+    - name: CoastalGrove_Bush_06
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 51.39, y: 1.5, z: 1.61}
+      rotation: {x: 0, y: 282, z: 0}
+      scale: {x: 0.66, y: 0.66, z: 0.66}
+    - name: CoastalGrove_Tree_07
+      group: 1
+      prefab: {fileID: 8569633888848201884, guid: 1f6fcf9b83000ed48978ee97fcce8b50, type: 3}
+      position: {x: 60.3, y: 1.5, z: 2.04}
+      rotation: {x: 0, y: 259, z: 0}
+      scale: {x: 0.77, y: 0.77, z: 0.77}
+    - name: CoastalGrove_Shrub_07
+      group: 1
+      prefab: {fileID: 4394630348723029770, guid: dc40362b3a05f754eb66383280b28e3a, type: 3}
+      position: {x: 59.38, y: 1.5, z: 1.94}
+      rotation: {x: 0, y: 427, z: 0}
+      scale: {x: 0.86, y: 0.86, z: 0.86}
+    - name: CoastalGrove_Bush_07
+      group: 1
+      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
+      position: {x: 60.91, y: 1.5, z: 1.61}
+      rotation: {x: 0, y: 329, z: 0}
+      scale: {x: 0.66, y: 0.66, z: 0.66}
+    - name: CoastalMeadow_00
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 9.672106, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 149, z: 0}
+      scale: {x: 0.38679728, y: 0.38679728, z: 0.38679728}
+    - name: CoastalMeadow_01
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 10.915832, y: 1.5, z: 1.2345009}
+      rotation: {x: 0, y: 338, z: 0}
+      scale: {x: 0.4354578, y: 0.4354578, z: 0.4354578}
+    - name: CoastalMeadow_02
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 12.37259, y: 1.5, z: 1.2911562}
+      rotation: {x: 0, y: 111, z: 0}
+      scale: {x: 0.7317241, y: 0.7317241, z: 0.7317241}
+    - name: CoastalMeadow_03
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 13.919072, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 198, z: 0}
+      scale: {x: 0.49022043, y: 0.49022043, z: 0.49022043}
+    - name: CoastalMeadow_04
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 15.160043, y: 1.5, z: 1.6254196}
+      rotation: {x: 0, y: 300, z: 0}
+      scale: {x: 0.7219835, y: 0.7219835, z: 0.7219835}
+    - name: CoastalMeadow_05
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 16.670282, y: 1.5, z: 1.8150861}
+      rotation: {x: 0, y: 277, z: 0}
+      scale: {x: 0.7310116, y: 0.7310116, z: 0.7310116}
+    - name: CoastalMeadow_06
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 18.140118, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 160, z: 0}
+      scale: {x: 0.41688463, y: 0.41688463, z: 0.41688463}
+    - name: CoastalMeadow_07
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 19.449244, y: 1.5, z: 1.1352019}
+      rotation: {x: 0, y: 341, z: 0}
+      scale: {x: 0.6939844, y: 0.6939844, z: 0.6939844}
+    - name: CoastalMeadow_08
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 21.062681, y: 1.5, z: 1.5522299}
+      rotation: {x: 0, y: 279, z: 0}
+      scale: {x: 0.62935895, y: 0.62935895, z: 0.62935895}
+    - name: CoastalMeadow_09
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 22.197214, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 296, z: 0}
+      scale: {x: 0.5354272, y: 0.5354272, z: 0.5354272}
+    - name: CoastalMeadow_10
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 23.751068, y: 1.5, z: 1.652718}
+      rotation: {x: 0, y: 141, z: 0}
+      scale: {x: 0.7320358, y: 0.7320358, z: 0.7320358}
+    - name: CoastalMeadow_11
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 24.874163, y: 1.5, z: 1.7801445}
+      rotation: {x: 0, y: 98, z: 0}
+      scale: {x: 0.4085047, y: 0.4085047, z: 0.4085047}
+    - name: CoastalMeadow_12
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 26.238308, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 216, z: 0}
+      scale: {x: 0.40336, y: 0.40336, z: 0.40336}
+    - name: CoastalMeadow_13
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 27.883457, y: 1.5, z: 1.3642471}
+      rotation: {x: 0, y: 227, z: 0}
+      scale: {x: 0.4313062, y: 0.4313062, z: 0.4313062}
+    - name: CoastalMeadow_14
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 29.159317, y: 1.5, z: 1.3729024}
+      rotation: {x: 0, y: 357, z: 0}
+      scale: {x: 0.50690246, y: 0.50690246, z: 0.50690246}
+    - name: CoastalMeadow_15
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 30.781923, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 113, z: 0}
+      scale: {x: 0.49462265, y: 0.49462265, z: 0.49462265}
+    - name: CoastalMeadow_16
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 32.181828, y: 1.5, z: 1.5950571}
+      rotation: {x: 0, y: 32, z: 0}
+      scale: {x: 0.4180915, y: 0.4180915, z: 0.4180915}
+    - name: CoastalMeadow_17
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 33.397682, y: 1.5, z: 1.3182154}
+      rotation: {x: 0, y: 228, z: 0}
+      scale: {x: 0.508624, y: 0.508624, z: 0.508624}
+    - name: CoastalMeadow_18
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 35.02665, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 47, z: 0}
+      scale: {x: 0.7082008, y: 0.7082008, z: 0.7082008}
+    - name: CoastalMeadow_19
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 36.244328, y: 1.5, z: 1.8268751}
+      rotation: {x: 0, y: 317, z: 0}
+      scale: {x: 0.4493093, y: 0.4493093, z: 0.4493093}
+    - name: CoastalMeadow_20
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 37.481937, y: 1.5, z: 1.6992059}
+      rotation: {x: 0, y: 249, z: 0}
+      scale: {x: 0.39547372, y: 0.39547372, z: 0.39547372}
+    - name: CoastalMeadow_21
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 39.00884, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 137, z: 0}
+      scale: {x: 0.3873545, y: 0.3873545, z: 0.3873545}
+    - name: CoastalMeadow_22
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 40.641, y: 1.5, z: 1.4422979}
+      rotation: {x: 0, y: 291, z: 0}
+      scale: {x: 0.5636225, y: 0.5636225, z: 0.5636225}
+    - name: CoastalMeadow_23
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 41.75897, y: 1.5, z: 1.3032948}
+      rotation: {x: 0, y: 155, z: 0}
+      scale: {x: 0.4947271, y: 0.4947271, z: 0.4947271}
+    - name: CoastalMeadow_24
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 43.20072, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 185, z: 0}
+      scale: {x: 0.61102724, y: 0.61102724, z: 0.61102724}
+    - name: CoastalMeadow_25
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 44.59961, y: 1.5, z: 1.8061085}
+      rotation: {x: 0, y: 104, z: 0}
+      scale: {x: 0.48780763, y: 0.48780763, z: 0.48780763}
+    - name: CoastalMeadow_26
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 45.830185, y: 1.5, z: 1.4712652}
+      rotation: {x: 0, y: 333, z: 0}
+      scale: {x: 0.6708518, y: 0.6708518, z: 0.6708518}
+    - name: CoastalMeadow_27
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 47.413395, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 256, z: 0}
+      scale: {x: 0.44448477, y: 0.44448477, z: 0.44448477}
+    - name: CoastalMeadow_28
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 48.820305, y: 1.5, z: 1.7324864}
+      rotation: {x: 0, y: 160, z: 0}
+      scale: {x: 0.44271448, y: 0.44271448, z: 0.44271448}
+    - name: CoastalMeadow_29
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 50.215607, y: 1.5, z: 1.2448751}
+      rotation: {x: 0, y: 342, z: 0}
+      scale: {x: 0.58129424, y: 0.58129424, z: 0.58129424}
+    - name: CoastalMeadow_30
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 51.44872, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 106, z: 0}
+      scale: {x: 0.70364326, y: 0.70364326, z: 0.70364326}
+    - name: CoastalMeadow_31
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 52.99813, y: 1.5, z: 1.655997}
+      rotation: {x: 0, y: 214, z: 0}
+      scale: {x: 0.6192245, y: 0.6192245, z: 0.6192245}
+    - name: CoastalMeadow_32
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 54.489334, y: 1.5, z: 1.8198268}
+      rotation: {x: 0, y: 117, z: 0}
+      scale: {x: 0.40833193, y: 0.40833193, z: 0.40833193}
+    - name: CoastalMeadow_33
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 55.818855, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 182, z: 0}
+      scale: {x: 0.5534765, y: 0.5534765, z: 0.5534765}
+    - name: CoastalMeadow_34
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 57.47731, y: 1.5, z: 1.5149813}
+      rotation: {x: 0, y: 212, z: 0}
+      scale: {x: 0.47096246, y: 0.47096246, z: 0.47096246}
+    - name: CoastalMeadow_35
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 58.823006, y: 1.5, z: 1.6520413}
+      rotation: {x: 0, y: 326, z: 0}
+      scale: {x: 0.5823162, y: 0.5823162, z: 0.5823162}
+    - name: CoastalMeadow_36
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 60.04442, y: 1.5, z: -0.93}
+      rotation: {x: 0, y: 75, z: 0}
+      scale: {x: 0.5928623, y: 0.5928623, z: 0.5928623}
+    - name: CoastalMeadow_37
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 61.298527, y: 1.5, z: 1.8480675}
+      rotation: {x: 0, y: 230, z: 0}
+      scale: {x: 0.6215959, y: 0.6215959, z: 0.6215959}
+    - name: CoastalStairHerbs_01
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 1.6500001, y: -0.22799997, z: 1.92}
+      rotation: {x: 0, y: 31, z: 0}
+      scale: {x: 0.67999995, y: 0.67999995, z: 0.67999995}
+    - name: CoastalStairHerbs_02
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 2.75, y: 0.060000032, z: 1.92}
+      rotation: {x: 0, y: 62, z: 0}
+      scale: {x: 0.52, y: 0.52, z: 0.52}
+    - name: CoastalStairHerbs_03
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 3.8500001, y: 0.34800005, z: 1.92}
+      rotation: {x: 0, y: 93, z: 0}
+      scale: {x: 0.67999995, y: 0.67999995, z: 0.67999995}
+    - name: CoastalStairHerbs_04
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 4.9500003, y: 0.63600004, z: 1.92}
+      rotation: {x: 0, y: 124, z: 0}
+      scale: {x: 0.52, y: 0.52, z: 0.52}
+    - name: CoastalStairHerbs_05
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 6.05, y: 0.924, z: 1.92}
+      rotation: {x: 0, y: 155, z: 0}
+      scale: {x: 0.67999995, y: 0.67999995, z: 0.67999995}
+    - name: CoastalStairHerbs_06
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 7.15, y: 1.212, z: 1.92}
+      rotation: {x: 0, y: 186, z: 0}
+      scale: {x: 0.52, y: 0.52, z: 0.52}
+    - name: CoastIsland_WestHeadland
+      group: 2
+      prefab: {fileID: 1278931156254473681, guid: 6053a9b0a65f58647962797394044cc1, type: 3}
+      position: {x: -9, y: -1.08, z: 17}
+      rotation: {x: 0, y: -9, z: 0}
+      scale: {x: 1.03, y: 0.9, z: 0.87}
+    - name: CoastIsland_WestShoal
+      group: 2
+      prefab: {fileID: 5355322313783628608, guid: e3b269d80a256c94aa67ad60944b1cd8, type: 3}
+      position: {x: 6, y: -1.08, z: 19.5}
+      rotation: {x: 0, y: -18, z: 0}
+      scale: {x: 0.74, y: 0.64, z: 0.9}
+    - name: CoastIsland_SouthCove
+      group: 2
+      prefab: {fileID: 4584613175236492617, guid: 44fdb58e23003b5419274b2efba9e358, type: 3}
+      position: {x: 25, y: -1.08, z: 16.5}
+      rotation: {x: 0, y: 14, z: 0}
+      scale: {x: 1.05, y: 0.82, z: 1}
+    - name: CoastIsland_EastShoal
+      group: 2
+      prefab: {fileID: 5355322313783628608, guid: e3b269d80a256c94aa67ad60944b1cd8, type: 3}
+      position: {x: 44, y: -1.08, z: 14.5}
+      rotation: {x: 0, y: 34, z: 0}
+      scale: {x: 1.02, y: 0.62, z: 0.86}
+    - name: CoastIsland_EastHeadland
+      group: 2
+      prefab: {fileID: 1278931156254473681, guid: 6053a9b0a65f58647962797394044cc1, type: 3}
+      position: {x: 67, y: -1.08, z: 18}
+      rotation: {x: 0, y: 20, z: 0}
+      scale: {x: 0.95, y: 1.05, z: 0.95}
+    - name: CoastIsland_FarCove
+      group: 3
+      prefab: {fileID: 4584613175236492617, guid: 44fdb58e23003b5419274b2efba9e358, type: 3}
+      position: {x: -23, y: -1.08, z: 30}
+      rotation: {x: 0, y: -4, z: 0}
+      scale: {x: 1.65, y: 0.95, z: 1.15}
+    - name: CoastIsland_FarHeadland
+      group: 3
+      prefab: {fileID: 1278931156254473681, guid: 6053a9b0a65f58647962797394044cc1, type: 3}
+      position: {x: 14, y: -1.08, z: 29}
+      rotation: {x: 0, y: -15, z: 0}
+      scale: {x: 1.18, y: 1.03, z: 1.02}
+    - name: CoastIsland_FarWoodedRidge
+      group: 3
+      prefab: {fileID: 4584613175236492617, guid: 44fdb58e23003b5419274b2efba9e358, type: 3}
+      position: {x: 49, y: -1.08, z: 32}
+      rotation: {x: 0, y: -28, z: 0}
+      scale: {x: 1.38, y: 0.95, z: 1.2}
+    - name: CoastIsland_FarEastShoal
+      group: 3
+      prefab: {fileID: 5355322313783628608, guid: e3b269d80a256c94aa67ad60944b1cd8, type: 3}
+      position: {x: 85, y: -1.08, z: 28}
+      rotation: {x: 0, y: 20, z: 0}
+      scale: {x: 1.63, y: 1.19, z: 1.16}
+  - name: 02_Cliff
+    length: 80
+    build: 0
+    elements: []
+  - name: 03_CoastalRoad
+    length: 80
+    build: 0
+    elements: []
+  - name: 04_FloodedVillage
+    length: 112
+    build: 0
+    elements: []
+  skybox: {fileID: 2100000, guid: ebdb3f97d3ac9464d9d5ef35d7a9808f, type: 2}
+  playerSpawn: {x: 0.65, y: 0.12, z: 0}
