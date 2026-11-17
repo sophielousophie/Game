@@ -8,7 +8,7 @@ public class DNACollectible : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
-        EnergyManager energyManager = FindFirstObjectByType<EnergyManager>();
+        EnergyManager energyManager = FindAnyObjectByType<EnergyManager>();//FindFirstObjectByType<EnergyManager>();
         if (energyManager == null)
         {
             Debug.LogWarning("DNACollectible: no EnergyManager found in the scene.");

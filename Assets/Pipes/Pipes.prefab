@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveLeft
   speed: 5
-  range: 5
+  range: 6
 --- !u!50 &5161184272446655784
 Rigidbody2D:
   serializedVersion: 5
