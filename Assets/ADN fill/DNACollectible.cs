@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DNACollectible : MonoBehaviour
 {
-    [SerializeField] private float energyGain = 25f;
+    [SerializeField] private float energyGain = 10f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
