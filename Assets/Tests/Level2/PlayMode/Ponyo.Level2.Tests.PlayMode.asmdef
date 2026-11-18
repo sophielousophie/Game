@@ -1,0 +1,20 @@
+{
+  "name": "Ponyo.Level2.Tests.PlayMode",
+  "rootNamespace": "",
+  "references": [
+    "Ponyo.Level2",
+    "Unity.InputSystem"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}
