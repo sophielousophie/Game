@@ -8,8 +8,14 @@ using Group = Level2Layout.Group;
 internal static partial class Level2SectionOne
 {
     internal const string LayoutPath = "Assets/Art/Level2/Level2Layout.asset";
+    internal const float CoastalSectionLength = 82.4f;
     private const string Art = "Assets/Art/Level2/Generated";
     private const string Prefabs = "Assets/Prefabs/Level2/Section1";
+    // The coastal terrain spans y = -1.4 to y = 1.5.
+    internal const float SeaSurfaceY = -1.4f + 2.9f * 0.40f;
+    internal const float IslandBaseY = SeaSurfaceY - 0.20f;
+    internal const float BuoyBaseY = SeaSurfaceY - 0.055f;
+    internal static readonly Vector3 StairSpawn = new(3.65f, 0.91f, 0f);
 
     private const string Building = "building-kit";
     private const string Forest = "mini-forest_1.0";
@@ -26,7 +32,9 @@ internal static partial class Level2SectionOne
         (Hex, "water"), (Hex, "water-rocks"), (Hex, "grass-hill"), (Hex, "water-island"),
         (Hex, "grass-forest"), (Hex, "stone-hill"),
         (Forest, "tree-high"), (Survival, "fence"), (Survival, "grass-large"),
-        (Suburban, "tree-small"), (Watercraft, "buoy")
+        (Suburban, "tree-small"), (Watercraft, "buoy"),
+        (Suburban, "tree-large"), (Survival, "tree"), (Survival, "tree-tall"),
+        (Suburban, "building-type-a")
     };
 
     internal static Level2Layout LoadOrCreate()
@@ -39,8 +47,9 @@ internal static partial class Level2SectionOne
 
         ImportModels();
         Level2Layout layout = ScriptableObject.CreateInstance<Level2Layout>();
+        layout.playerSpawn = StairSpawn;
         layout.skybox = CreateSkybox();
-        var beach = new Level2Layout.Section { name = "01_Beach", length = 64f, build = true };
+        var beach = new Level2Layout.Section { name = "01_Beach", length = CoastalSectionLength, build = true };
         layout.sections.Add(beach);
         layout.sections.Add(new Level2Layout.Section { name = "02_Cliff", length = 80f });
         layout.sections.Add(new Level2Layout.Section { name = "03_CoastalRoad", length = 80f });
@@ -50,16 +59,18 @@ internal static partial class Level2SectionOne
         CreateNearDecor(beach);
         CreateWater(beach);
         CreateCoastalDressing(beach);
+        AddRoadTransition(beach);
         Add(beach, Group.Checkpoints, "Checkpoint_S1_End", Prefab("Checkpoint", root =>
         {
             Trigger(root, new Vector2(0.4f, 8f), new Vector2(0f, 2f));
             root.AddComponent<Level2Checkpoint>();
-        }), 61.8f, 2.12f);
+        }), CoastalSectionLength - 2.2f, 2.12f);
         Add(beach, Group.EndTrigger, "Section1PreviewEnd", Prefab("Section1PreviewEnd", root =>
         {
             Trigger(root, new Vector2(0.4f, 8f), new Vector2(0f, 2f));
             root.AddComponent<Level2PreviewEnd>();
-        }), 63.4f, 1.5f);
+        }), CoastalSectionLength - 0.6f, 1.5f);
+        layout.duration = (CoastalSectionLength + 272f) / layout.playerSpeed;
         AssetDatabase.CreateAsset(layout, LayoutPath);
         AssetDatabase.SaveAssets();
         return layout;
@@ -83,7 +94,9 @@ internal static partial class Level2SectionOne
                 new Vector3(1f, 0.18f, 4.13f), new Color(0.36f, 0.64f, 0.25f));
             Level2CoastalFronts.AddSoil(root.transform);
         });
-        Add(beach, Group.Gameplay, "CoastalGround", ground, 36.4f, 1.5f, scale: new Vector3(55.2f, 1f, 1f));
+        Add(beach, Group.Gameplay, "CoastalGround", ground, (8.8f + CoastalSectionLength) * 0.5f, 1.5f,
+            scale: new Vector3(CoastalSectionLength - 8.8f, 1f, 1f));
+        AddStairLanding(beach);
         Add(beach, Group.Gameplay, "CoastalWalkableSurface", CreateWalkableSurface(), 0f, 0f);
     }
 
@@ -104,7 +117,7 @@ internal static partial class Level2SectionOne
         {
             // One edge lets the capsule cross from the slope to the flat without a collider seam.
             EdgeCollider2D surface = root.AddComponent<EdgeCollider2D>();
-            surface.points = new[] { new Vector2(0f, -0.7f), new Vector2(8.08f, 1.5f), new Vector2(64f, 1.5f) };
+            surface.points = new[] { new Vector2(0f, -0.7f), new Vector2(8.08f, 1.5f), new Vector2(CoastalSectionLength, 1.5f) };
         });
     }
 
@@ -148,7 +161,7 @@ internal static partial class Level2SectionOne
     {
         GameObject bush = ModelPrefab("Bush", Forest, "plant", new Vector3(1.30f, 0.65f, 0.85f), 18f);
         GameObject shrub = ModelPrefab("Shrub", Suburban, "tree-small", new Vector3(0.82f, 1.24f, 0.75f), 20f);
-        GameObject grass = ModelPrefab("GrassTuft", Survival, "grass", new Vector3(0.58f, 0.35f, 0.45f), 15f);
+        GameObject grass = CoastalGrassPrefab("GrassTuft", 22, new Vector3(0.58f, 0.35f, 0.45f));
         GameObject stones = ModelPrefab("Pebbles", Forest, "stones", new Vector3(0.72f, 0.24f, 0.48f), 30f);
         GameObject dirtPatch = ModelPrefab("DirtPatch", Forest, "patch-dirt", new Vector3(1.52f, 0.06f, 1f), 15f);
         GameObject grassPatch = ModelPrefab("GrassPatch", Forest, "patch-grass", new Vector3(1.62f, 0.14f, 0.85f), 15f);
@@ -165,8 +178,6 @@ internal static partial class Level2SectionOne
         });
 
         var plants = new[] { bush, grass, flower, stones, shrub, grass, grassPatch, flower, dirtPatch };
-        Add(beach, Group.Decor_Proche, "Steps_Bush", bush, 3.5f, 0.04f, 1.4f, Vector3.one * 0.65f);
-        Add(beach, Group.Decor_Proche, "Steps_Grass", grass, 6.6f, 0.96f, 1.5f);
         for (int i = 0; i < 27; i++)
         {
             GameObject plant = plants[i % plants.Length];
@@ -180,6 +191,8 @@ internal static partial class Level2SectionOne
         GameObject water = SeaPrefab("SeaWater", "water", new Vector3(10.5f, 0.40f, 9.0f));
         GameObject waterRocks = SeaPrefab("SeaWaterRocks", "water-rocks", new Vector3(10.5f, 1.25f, 9.0f));
         GameObject buoy = ModelPrefab("Buoy", Watercraft, "buoy", new Vector3(0.75f, 1.1f, 0.75f), 0f);
+        float waterY = SeaTileOriginY(water);
+        float rocksY = SeaTileOriginY(waterRocks);
         for (int row = 0; row < 5; row++)
         {
             Group group = row < 2 ? Group.Decor_Intermediaire : Group.Decor_Lointain;
@@ -188,7 +201,7 @@ internal static partial class Level2SectionOne
                 GameObject prefab = row < 3 && (tile + row * 2) % 7 == 3 ? waterRocks : water;
                 float spacing = 8.15f;
                 Add(beach, group, $"Sea_{row}_{tile:00}", prefab, -31f + tile * spacing + (row % 2) * spacing * 0.5f,
-                    -1.28f, 4.5f + row * 6.2f);
+                    prefab == water ? waterY : rocksY, 4.5f + row * 6.2f);
             }
         }
 
@@ -197,11 +210,20 @@ internal static partial class Level2SectionOne
             for (int tile = 0; tile < 12; tile++)
             {
                 Add(beach, Group.Decor_Proche, $"ShoreWater_{row}_{tile:00}", water, -10f + tile * 8.15f + row * 4.075f,
-                    -1.43f, -8.1f + row * 6.2f);
+                    waterY, -8.1f + row * 6.2f);
             }
         }
-        Add(beach, Group.Decor_Intermediaire, "Buoy_01", buoy, 3f, -0.93f, 6.2f);
-        Add(beach, Group.Decor_Intermediaire, "Buoy_02", buoy, 37f, -0.93f, 10.6f);
+        Add(beach, Group.Decor_Intermediaire, "Buoy_01", buoy, 3f, BuoyBaseY, 6.2f);
+        Add(beach, Group.Decor_Intermediaire, "Buoy_02", buoy, 37f, BuoyBaseY, 10.6f);
+        Level2ShoreSplashes.AddTo(beach);
+    }
+
+    internal static float SeaTileOriginY(GameObject prefab, float scaleY = 1f)
+    {
+        Transform surface = prefab.transform.Find("TexturedWaterSurface");
+        float localWaterY = surface.localPosition.y
+            + surface.GetComponent<MeshFilter>().sharedMesh.bounds.center.y * surface.localScale.y;
+        return SeaSurfaceY - localWaterY * scaleY;
     }
 
     private static GameObject SeaPrefab(string prefab, string model, Vector3 size, float yaw = 0f)

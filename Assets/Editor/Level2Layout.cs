@@ -28,10 +28,14 @@ public sealed class Level2Layout : ScriptableObject
     }
 
     [Min(0.01f)] public float playerSpeed = 3.2f;
+    [Min(0.01f)] public float runSpeedMultiplier = 1.15f;
     [Min(0.01f)] public float duration = 105f;
+    [Min(0.01f)] public float cameraZoom = 1.2f;
+    public float coastalElevationOffset = -0.348f;
     public List<Section> sections = new();
     public Material skybox;
     public Vector3 playerSpawn = new(0.65f, 0.12f, 0f);
 
     public float TotalDistance => playerSpeed * duration;
+    public float RunSpeed => playerSpeed * runSpeedMultiplier;
 }

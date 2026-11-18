@@ -18,7 +18,7 @@ internal static class Level2CoastalFronts
     internal static void AddSoil(Transform root)
     {
         AddFront(root, new[] { root.Find("Soil").GetComponent<MeshFilter>() }, "CoastalSoil",
-            new Vector2(55.2f, 1f) / 3.5f);
+            new Vector2(Level2SectionOne.CoastalSectionLength - 8.8f, 1f) / 3.5f);
     }
 
     private static void AddFront(Transform root, MeshFilter[] sources, string name, Vector2 uvScale,
@@ -104,7 +104,7 @@ internal static class Level2CoastalFronts
         }
     }
 
-    private static Material LoadMaterial(string name)
+    internal static Material LoadMaterial(string name)
     {
         string path = $"{AssetsPath}/{name}Front.mat";
         Material material = AssetDatabase.LoadAssetAtPath<Material>(path);
@@ -113,7 +113,13 @@ internal static class Level2CoastalFronts
             return material;
         }
 
-        Texture2D texture = AssetDatabase.LoadAssetAtPath<Texture2D>($"{AssetsPath}/{name}.png");
+        Texture2D texture = name == "CoastalMossyStone"
+            ? AssetDatabase.LoadAssetAtPath<Texture2D>($"{AssetsPath}/CoastalStairStone.png") : null;
+        if (texture == null && name == "CoastalMossyStone")
+        {
+            texture = AssetDatabase.LoadAssetAtPath<Texture2D>($"{AssetsPath}/CoastalStairStone.jpg");
+        }
+        texture ??= AssetDatabase.LoadAssetAtPath<Texture2D>($"{AssetsPath}/{name}.png");
         if (texture == null)
         {
             throw new InvalidOperationException($"Missing front texture: {name}.");

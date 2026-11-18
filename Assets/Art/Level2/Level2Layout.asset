@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Level2Layout
   m_EditorClassIdentifier: Assembly-CSharp-Editor::Level2Layout
   playerSpeed: 3.2
-  duration: 105
+  runSpeedMultiplier: 1.15
+  duration: 110.75
+  cameraZoom: 1.2
+  coastalElevationOffset: -0.348
   sections:
   - name: 01_Beach
-    length: 64
+    length: 82.4
     build: 1
     elements:
     - name: CoastalStairs
@@ -28,9 +31,9 @@ MonoBehaviour:
     - name: CoastalGround
       group: 0
       prefab: {fileID: 2508962085903694952, guid: ce4659250f24925428999391d39bd339, type: 3}
-      position: {x: 36.4, y: 1.5, z: 0}
+      position: {x: 45.600002, y: 1.5, z: 0}
       rotation: {x: 0, y: 0, z: 0}
-      scale: {x: 55.2, y: 1, z: 1}
+      scale: {x: 73.6, y: 1, z: 1}
     - name: Rock_01_FirstJump
       group: 4
       prefab: {fileID: 8197251659544710313, guid: 10b647fb3e9d1c047b75af57459c2441, type: 3}
@@ -59,18 +62,6 @@ MonoBehaviour:
       group: 5
       prefab: {fileID: 9158215080144770487, guid: 1c1f857b26d3f6542a82aa31f6c66c25, type: 3}
       position: {x: 54, y: 2.05, z: 0}
-      rotation: {x: 0, y: 0, z: 0}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Steps_Bush
-      group: 1
-      prefab: {fileID: 7108282792246730040, guid: 585c3a77e40520e49a9f11d3a8ccdec0, type: 3}
-      position: {x: 3.5, y: 0.04, z: 1.4}
-      rotation: {x: 0, y: 0, z: 0}
-      scale: {x: 0.65, y: 0.65, z: 0.65}
-    - name: Steps_Grass
-      group: 1
-      prefab: {fileID: 8893064291466721711, guid: 03dec65df706065488956580c3a47dbe, type: 3}
-      position: {x: 6.6, y: 0.96, z: 1.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Bush_01
@@ -238,547 +229,547 @@ MonoBehaviour:
     - name: Sea_0_00
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -31, y: -1.28, z: 4.5}
+      position: {x: -31, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_01
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -22.85, y: -1.28, z: 4.5}
+      position: {x: -22.85, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_02
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -14.700001, y: -1.28, z: 4.5}
+      position: {x: -14.700001, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_03
       group: 2
       prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
-      position: {x: -6.550001, y: -1.28, z: 4.5}
+      position: {x: -6.550001, y: -0.7270125, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_04
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 1.5999985, y: -1.28, z: 4.5}
+      position: {x: 1.5999985, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_05
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 9.749998, y: -1.28, z: 4.5}
+      position: {x: 9.749998, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_06
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 17.899998, y: -1.28, z: 4.5}
+      position: {x: 17.899998, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_07
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 26.049997, y: -1.28, z: 4.5}
+      position: {x: 26.049997, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_08
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 34.199997, y: -1.28, z: 4.5}
+      position: {x: 34.199997, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_09
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 42.35, y: -1.28, z: 4.5}
+      position: {x: 42.35, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_10
       group: 2
       prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
-      position: {x: 50.499996, y: -1.28, z: 4.5}
+      position: {x: 50.499996, y: -0.7270125, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_11
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 58.649994, y: -1.28, z: 4.5}
+      position: {x: 58.649994, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_12
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 66.799995, y: -1.28, z: 4.5}
+      position: {x: 66.799995, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_00
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -26.925, y: -1.28, z: 10.7}
+      position: {x: -26.925, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_01
       group: 2
       prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
-      position: {x: -18.775002, y: -1.28, z: 10.7}
+      position: {x: -18.775002, y: -0.7270125, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_02
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -10.625001, y: -1.28, z: 10.7}
+      position: {x: -10.625001, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_03
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -2.4750013, y: -1.28, z: 10.7}
+      position: {x: -2.4750013, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_04
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 5.6749983, y: -1.28, z: 10.7}
+      position: {x: 5.6749983, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_05
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 13.824998, y: -1.28, z: 10.7}
+      position: {x: 13.824998, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_06
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 21.974998, y: -1.28, z: 10.7}
+      position: {x: 21.974998, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_07
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 30.124996, y: -1.28, z: 10.7}
+      position: {x: 30.124996, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_08
       group: 2
       prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
-      position: {x: 38.274998, y: -1.28, z: 10.7}
+      position: {x: 38.274998, y: -0.7270125, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_09
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 46.424995, y: -1.28, z: 10.7}
+      position: {x: 46.424995, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_10
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 54.574997, y: -1.28, z: 10.7}
+      position: {x: 54.574997, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_11
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 62.724995, y: -1.28, z: 10.7}
+      position: {x: 62.724995, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_12
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 70.87499, y: -1.28, z: 10.7}
+      position: {x: 70.87499, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_00
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -31, y: -1.28, z: 16.9}
+      position: {x: -31, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_01
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -22.85, y: -1.28, z: 16.9}
+      position: {x: -22.85, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_02
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -14.700001, y: -1.28, z: 16.9}
+      position: {x: -14.700001, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_03
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -6.550001, y: -1.28, z: 16.9}
+      position: {x: -6.550001, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_04
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 1.5999985, y: -1.28, z: 16.9}
+      position: {x: 1.5999985, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_05
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 9.749998, y: -1.28, z: 16.9}
+      position: {x: 9.749998, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_06
       group: 3
       prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
-      position: {x: 17.899998, y: -1.28, z: 16.9}
+      position: {x: 17.899998, y: -0.7270125, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_07
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 26.049997, y: -1.28, z: 16.9}
+      position: {x: 26.049997, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_08
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 34.199997, y: -1.28, z: 16.9}
+      position: {x: 34.199997, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_09
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 42.35, y: -1.28, z: 16.9}
+      position: {x: 42.35, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_10
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 50.499996, y: -1.28, z: 16.9}
+      position: {x: 50.499996, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_11
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 58.649994, y: -1.28, z: 16.9}
+      position: {x: 58.649994, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_12
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 66.799995, y: -1.28, z: 16.9}
+      position: {x: 66.799995, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_00
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -26.925, y: -1.28, z: 23.099998}
+      position: {x: -26.925, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_01
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -18.775002, y: -1.28, z: 23.099998}
+      position: {x: -18.775002, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_02
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -10.625001, y: -1.28, z: 23.099998}
+      position: {x: -10.625001, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_03
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -2.4750013, y: -1.28, z: 23.099998}
+      position: {x: -2.4750013, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_04
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 5.6749983, y: -1.28, z: 23.099998}
+      position: {x: 5.6749983, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_05
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 13.824998, y: -1.28, z: 23.099998}
+      position: {x: 13.824998, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_06
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 21.974998, y: -1.28, z: 23.099998}
+      position: {x: 21.974998, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_07
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 30.124996, y: -1.28, z: 23.099998}
+      position: {x: 30.124996, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_08
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 38.274998, y: -1.28, z: 23.099998}
+      position: {x: 38.274998, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_09
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 46.424995, y: -1.28, z: 23.099998}
+      position: {x: 46.424995, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_10
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 54.574997, y: -1.28, z: 23.099998}
+      position: {x: 54.574997, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_11
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 62.724995, y: -1.28, z: 23.099998}
+      position: {x: 62.724995, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_12
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 70.87499, y: -1.28, z: 23.099998}
+      position: {x: 70.87499, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_00
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -31, y: -1.28, z: 29.3}
+      position: {x: -31, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_01
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -22.85, y: -1.28, z: 29.3}
+      position: {x: -22.85, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_02
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -14.700001, y: -1.28, z: 29.3}
+      position: {x: -14.700001, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_03
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -6.550001, y: -1.28, z: 29.3}
+      position: {x: -6.550001, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_04
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 1.5999985, y: -1.28, z: 29.3}
+      position: {x: 1.5999985, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_05
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 9.749998, y: -1.28, z: 29.3}
+      position: {x: 9.749998, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_06
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 17.899998, y: -1.28, z: 29.3}
+      position: {x: 17.899998, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_07
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 26.049997, y: -1.28, z: 29.3}
+      position: {x: 26.049997, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_08
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 34.199997, y: -1.28, z: 29.3}
+      position: {x: 34.199997, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_09
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 42.35, y: -1.28, z: 29.3}
+      position: {x: 42.35, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_10
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 50.499996, y: -1.28, z: 29.3}
+      position: {x: 50.499996, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_11
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 58.649994, y: -1.28, z: 29.3}
+      position: {x: 58.649994, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_12
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 66.799995, y: -1.28, z: 29.3}
+      position: {x: 66.799995, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_00
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -10, y: -1.43, z: -8.1}
+      position: {x: -10, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_01
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -1.8500004, y: -1.43, z: -8.1}
+      position: {x: -1.8500004, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_02
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 6.299999, y: -1.43, z: -8.1}
+      position: {x: 6.299999, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_03
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 14.449999, y: -1.43, z: -8.1}
+      position: {x: 14.449999, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_04
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 22.599998, y: -1.43, z: -8.1}
+      position: {x: 22.599998, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_05
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 30.749998, y: -1.43, z: -8.1}
+      position: {x: 30.749998, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_06
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 38.899998, y: -1.43, z: -8.1}
+      position: {x: 38.899998, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_07
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 47.049995, y: -1.43, z: -8.1}
+      position: {x: 47.049995, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_08
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 55.199997, y: -1.43, z: -8.1}
+      position: {x: 55.199997, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_09
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 63.35, y: -1.43, z: -8.1}
+      position: {x: 63.35, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_10
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 71.5, y: -1.43, z: -8.1}
+      position: {x: 71.5, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_00
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: -5.925, y: -1.43, z: -1.9000006}
+      position: {x: -5.925, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_01
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 2.2249994, y: -1.43, z: -1.9000006}
+      position: {x: 2.2249994, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_02
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 10.374999, y: -1.43, z: -1.9000006}
+      position: {x: 10.374999, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_03
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 18.524998, y: -1.43, z: -1.9000006}
+      position: {x: 18.524998, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_04
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 26.675, y: -1.43, z: -1.9000006}
+      position: {x: 26.675, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_05
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 34.824997, y: -1.43, z: -1.9000006}
+      position: {x: 34.824997, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_06
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 42.975, y: -1.43, z: -1.9000006}
+      position: {x: 42.975, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_07
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 51.124996, y: -1.43, z: -1.9000006}
+      position: {x: 51.124996, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_08
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 59.274998, y: -1.43, z: -1.9000006}
+      position: {x: 59.274998, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_09
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 67.424995, y: -1.43, z: -1.9000006}
+      position: {x: 67.424995, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_10
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 75.575, y: -1.43, z: -1.9000006}
+      position: {x: 75.575, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Buoy_01
       group: 2
       prefab: {fileID: 4604014830793804208, guid: 8e56c9941b6f8de45bc4617caa67e932, type: 3}
-      position: {x: 3, y: -0.93, z: 6.2}
+      position: {x: 3, y: -0.2949999, z: 6.2}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Buoy_02
       group: 2
       prefab: {fileID: 4604014830793804208, guid: 8e56c9941b6f8de45bc4617caa67e932, type: 3}
-      position: {x: 37, y: -0.93, z: 10.6}
+      position: {x: 37, y: -0.2949999, z: 10.6}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Checkpoint_S1_End
       group: 6
       prefab: {fileID: 7943488235979793753, guid: 9fa43500f9f4b4b48aa648ed8a98da7a, type: 3}
-      position: {x: 61.8, y: 2.12, z: 0}
+      position: {x: 80.200005, y: 2.12, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Section1PreviewEnd
       group: 7
       prefab: {fileID: 1829889745750682989, guid: 79856aa15fa22b74fbc0dc1caa1f2f6e, type: 3}
-      position: {x: 63.4, y: 1.5, z: 0}
+      position: {x: 81.8, y: 1.5, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: CoastalWalkableSurface
@@ -790,133 +781,133 @@ MonoBehaviour:
     - name: Sea_0_13
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 74.95, y: -1.28, z: 4.5}
+      position: {x: 74.95, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_14
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 83.09999, y: -1.28, z: 4.5}
+      position: {x: 83.09999, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_15
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 91.24999, y: -1.28, z: 4.5}
+      position: {x: 91.24999, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_0_16
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 99.399994, y: -1.28, z: 4.5}
+      position: {x: 99.399994, y: -0.6449999, z: 4.5}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_13
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 79.024994, y: -1.28, z: 10.7}
+      position: {x: 79.024994, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_14
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 87.174995, y: -1.28, z: 10.7}
+      position: {x: 87.174995, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_15
       group: 2
       prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
-      position: {x: 95.325, y: -1.28, z: 10.7}
+      position: {x: 95.325, y: -0.7270125, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_1_16
       group: 2
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 103.47499, y: -1.28, z: 10.7}
+      position: {x: 103.47499, y: -0.6449999, z: 10.7}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_13
       group: 3
       prefab: {fileID: 1936772286549461282, guid: 3034761cabf549e4f9b20a1d7d884b53, type: 3}
-      position: {x: 74.95, y: -1.28, z: 16.9}
+      position: {x: 74.95, y: -0.7270125, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_14
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 83.09999, y: -1.28, z: 16.9}
+      position: {x: 83.09999, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_15
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 91.24999, y: -1.28, z: 16.9}
+      position: {x: 91.24999, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_2_16
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 99.399994, y: -1.28, z: 16.9}
+      position: {x: 99.399994, y: -0.6449999, z: 16.9}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_13
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 79.024994, y: -1.28, z: 23.099998}
+      position: {x: 79.024994, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_14
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 87.174995, y: -1.28, z: 23.099998}
+      position: {x: 87.174995, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_15
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 95.325, y: -1.28, z: 23.099998}
+      position: {x: 95.325, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_3_16
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 103.47499, y: -1.28, z: 23.099998}
+      position: {x: 103.47499, y: -0.6449999, z: 23.099998}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_13
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 74.95, y: -1.28, z: 29.3}
+      position: {x: 74.95, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_14
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 83.09999, y: -1.28, z: 29.3}
+      position: {x: 83.09999, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_15
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 91.24999, y: -1.28, z: 29.3}
+      position: {x: 91.24999, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: Sea_4_16
       group: 3
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 99.399994, y: -1.28, z: 29.3}
+      position: {x: 99.399994, y: -0.6449999, z: 29.3}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_0_11
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 79.649994, y: -1.43, z: -8.1}
+      position: {x: 79.649994, y: -0.6449999, z: -8.1}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoreWater_1_11
       group: 1
       prefab: {fileID: 8657475412101013063, guid: a32355408fec9674fbaaa0a0104a8f29, type: 3}
-      position: {x: 83.725, y: -1.43, z: -1.9000006}
+      position: {x: 83.725, y: -0.6449999, z: -1.9000006}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
     - name: CoastalFence_01_01
@@ -1375,96 +1366,720 @@ MonoBehaviour:
       position: {x: 61.298527, y: 1.5, z: 1.8480675}
       rotation: {x: 0, y: 230, z: 0}
       scale: {x: 0.6215959, y: 0.6215959, z: 0.6215959}
-    - name: CoastalStairHerbs_01
-      group: 1
-      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
-      position: {x: 1.6500001, y: -0.22799997, z: 1.92}
-      rotation: {x: 0, y: 31, z: 0}
-      scale: {x: 0.67999995, y: 0.67999995, z: 0.67999995}
-    - name: CoastalStairHerbs_02
-      group: 1
-      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
-      position: {x: 2.75, y: 0.060000032, z: 1.92}
-      rotation: {x: 0, y: 62, z: 0}
-      scale: {x: 0.52, y: 0.52, z: 0.52}
-    - name: CoastalStairHerbs_03
-      group: 1
-      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
-      position: {x: 3.8500001, y: 0.34800005, z: 1.92}
-      rotation: {x: 0, y: 93, z: 0}
-      scale: {x: 0.67999995, y: 0.67999995, z: 0.67999995}
-    - name: CoastalStairHerbs_04
-      group: 1
-      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
-      position: {x: 4.9500003, y: 0.63600004, z: 1.92}
-      rotation: {x: 0, y: 124, z: 0}
-      scale: {x: 0.52, y: 0.52, z: 0.52}
-    - name: CoastalStairHerbs_05
-      group: 1
-      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
-      position: {x: 6.05, y: 0.924, z: 1.92}
-      rotation: {x: 0, y: 155, z: 0}
-      scale: {x: 0.67999995, y: 0.67999995, z: 0.67999995}
-    - name: CoastalStairHerbs_06
-      group: 1
-      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
-      position: {x: 7.15, y: 1.212, z: 1.92}
-      rotation: {x: 0, y: 186, z: 0}
-      scale: {x: 0.52, y: 0.52, z: 0.52}
     - name: CoastIsland_WestHeadland
       group: 2
       prefab: {fileID: 1278931156254473681, guid: 6053a9b0a65f58647962797394044cc1, type: 3}
-      position: {x: -9, y: -1.08, z: 17}
+      position: {x: -9, y: -0.43999988, z: 17}
       rotation: {x: 0, y: -9, z: 0}
       scale: {x: 1.03, y: 0.9, z: 0.87}
     - name: CoastIsland_WestShoal
       group: 2
       prefab: {fileID: 5355322313783628608, guid: e3b269d80a256c94aa67ad60944b1cd8, type: 3}
-      position: {x: 6, y: -1.08, z: 19.5}
+      position: {x: 6, y: -0.43999988, z: 19.5}
       rotation: {x: 0, y: -18, z: 0}
       scale: {x: 0.74, y: 0.64, z: 0.9}
     - name: CoastIsland_SouthCove
       group: 2
       prefab: {fileID: 4584613175236492617, guid: 44fdb58e23003b5419274b2efba9e358, type: 3}
-      position: {x: 25, y: -1.08, z: 16.5}
+      position: {x: 25, y: -0.43999988, z: 16.5}
       rotation: {x: 0, y: 14, z: 0}
       scale: {x: 1.05, y: 0.82, z: 1}
     - name: CoastIsland_EastShoal
       group: 2
       prefab: {fileID: 5355322313783628608, guid: e3b269d80a256c94aa67ad60944b1cd8, type: 3}
-      position: {x: 44, y: -1.08, z: 14.5}
+      position: {x: 44, y: -0.43999988, z: 14.5}
       rotation: {x: 0, y: 34, z: 0}
       scale: {x: 1.02, y: 0.62, z: 0.86}
     - name: CoastIsland_EastHeadland
       group: 2
       prefab: {fileID: 1278931156254473681, guid: 6053a9b0a65f58647962797394044cc1, type: 3}
-      position: {x: 67, y: -1.08, z: 18}
+      position: {x: 67, y: -0.43999988, z: 18}
       rotation: {x: 0, y: 20, z: 0}
       scale: {x: 0.95, y: 1.05, z: 0.95}
     - name: CoastIsland_FarCove
       group: 3
       prefab: {fileID: 4584613175236492617, guid: 44fdb58e23003b5419274b2efba9e358, type: 3}
-      position: {x: -23, y: -1.08, z: 30}
+      position: {x: -23, y: -0.43999988, z: 30}
       rotation: {x: 0, y: -4, z: 0}
       scale: {x: 1.65, y: 0.95, z: 1.15}
     - name: CoastIsland_FarHeadland
       group: 3
       prefab: {fileID: 1278931156254473681, guid: 6053a9b0a65f58647962797394044cc1, type: 3}
-      position: {x: 14, y: -1.08, z: 29}
+      position: {x: 14, y: -0.43999988, z: 29}
       rotation: {x: 0, y: -15, z: 0}
       scale: {x: 1.18, y: 1.03, z: 1.02}
     - name: CoastIsland_FarWoodedRidge
       group: 3
       prefab: {fileID: 4584613175236492617, guid: 44fdb58e23003b5419274b2efba9e358, type: 3}
-      position: {x: 49, y: -1.08, z: 32}
+      position: {x: 49, y: -0.43999988, z: 32}
       rotation: {x: 0, y: -28, z: 0}
       scale: {x: 1.38, y: 0.95, z: 1.2}
     - name: CoastIsland_FarEastShoal
       group: 3
-      prefab: {fileID: 5355322313783628608, guid: e3b269d80a256c94aa67ad60944b1cd8, type: 3}
-      position: {x: 85, y: -1.08, z: 28}
+      prefab: {fileID: 4666667029152433843, guid: 34ca596f4976f6249802f9d06e2be6ef, type: 3}
+      position: {x: 85, y: -0.43999988, z: 28}
       rotation: {x: 0, y: 20, z: 0}
       scale: {x: 1.63, y: 1.19, z: 1.16}
+    - name: CoastalStairLanding
+      group: 1
+      prefab: {fileID: 5871403924216687185, guid: 65134862c23241f49b4f2d909b8fa888, type: 3}
+      position: {x: 8.8, y: 1.5, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WildGrass_Bank_0_000
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 9.26521, y: 1.5, z: -1.1086359}
+      rotation: {x: 0, y: 13.223549, z: 0}
+      scale: {x: 0.7332944, y: 0.43412456, z: 0.7332944}
+    - name: WildGrass_Bank_0_001
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 9.736063, y: 1.5, z: -1.0178391}
+      rotation: {x: 0, y: 166.16953, z: 0}
+      scale: {x: 0.7012571, y: 0.3843758, z: 0.7012571}
+    - name: WildGrass_Bank_0_002
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 10.631206, y: 1.5, z: -0.9272443}
+      rotation: {x: 0, y: 18.74877, z: 0}
+      scale: {x: 0.9129685, y: 0.32086617, z: 0.9129685}
+    - name: WildGrass_Bank_0_003
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 11.457428, y: 1.5, z: -1.0155057}
+      rotation: {x: 0, y: 0.81797415, z: 0}
+      scale: {x: 0.91960824, y: 0.35339075, z: 0.91960824}
+    - name: WildGrass_Bank_0_004
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 12.085463, y: 1.5, z: -1.1285437}
+      rotation: {x: 0, y: 181.0701, z: 0}
+      scale: {x: 0.8955393, y: 0.41169629, z: 0.8955393}
+    - name: WildGrass_Bank_0_005
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 12.69577, y: 1.5, z: -0.9610278}
+      rotation: {x: 0, y: 201.53813, z: 0}
+      scale: {x: 0.95487124, y: 0.31553692, z: 0.95487124}
+    - name: WildGrass_Bank_0_015
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 19.953178, y: 1.5, z: -0.99175155}
+      rotation: {x: 0, y: 14.57091, z: 0}
+      scale: {x: 0.92581147, y: 0.32377887, z: 0.92581147}
+    - name: WildGrass_Bank_0_016
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 20.682783, y: 1.5, z: -1.035874}
+      rotation: {x: 0, y: 48.03311, z: 0}
+      scale: {x: 0.8535736, y: 0.3490617, z: 0.8535736}
+    - name: WildGrass_Bank_0_017
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 21.225817, y: 1.5, z: -0.9290974}
+      rotation: {x: 0, y: 188.80824, z: 0}
+      scale: {x: 0.77120626, y: 0.46555573, z: 0.77120626}
+    - name: WildGrass_Bank_0_018
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 22.203136, y: 1.5, z: -1.0236573}
+      rotation: {x: 0, y: 357.04593, z: 0}
+      scale: {x: 0.8251202, y: 0.45663372, z: 0.8251202}
+    - name: WildGrass_Bank_0_027
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 28.558693, y: 1.5, z: -1.1413137}
+      rotation: {x: 0, y: 178.87207, z: 0}
+      scale: {x: 0.6989028, y: 0.31960008, z: 0.6989028}
+    - name: WildGrass_Bank_0_028
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 29.153183, y: 1.5, z: -0.95771}
+      rotation: {x: 0, y: 157.24326, z: 0}
+      scale: {x: 0.8678796, y: 0.30945712, z: 0.8678796}
+    - name: WildGrass_Bank_0_038
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 36.3855, y: 1.5, z: -1.134687}
+      rotation: {x: 0, y: 33.3599, z: 0}
+      scale: {x: 0.92530984, y: 0.32959035, z: 0.92530984}
+    - name: WildGrass_Bank_0_039
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 37.287098, y: 1.5, z: -1.0307268}
+      rotation: {x: 0, y: 94.06526, z: 0}
+      scale: {x: 0.7382242, y: 0.4512583, z: 0.7382242}
+    - name: WildGrass_Bank_0_040
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 37.975273, y: 1.5, z: -0.92882717}
+      rotation: {x: 0, y: 42.77913, z: 0}
+      scale: {x: 0.8661631, y: 0.47849587, z: 0.8661631}
+    - name: WildGrass_Bank_0_041
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 38.7965, y: 1.5, z: -1.0631607}
+      rotation: {x: 0, y: 49.085846, z: 0}
+      scale: {x: 0.88255686, y: 0.46443862, z: 0.88255686}
+    - name: WildGrass_Bank_0_049
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 44.506184, y: 1.5, z: -1.1470301}
+      rotation: {x: 0, y: 176.58475, z: 0}
+      scale: {x: 0.77748644, y: 0.40502092, z: 0.77748644}
+    - name: WildGrass_Bank_0_050
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 45.040287, y: 1.5, z: -1.1503981}
+      rotation: {x: 0, y: 16.068419, z: 0}
+      scale: {x: 0.87407935, y: 0.4632134, z: 0.87407935}
+    - name: WildGrass_Bank_0_051
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 45.762062, y: 1.5, z: -0.9325918}
+      rotation: {x: 0, y: 125.23313, z: 0}
+      scale: {x: 0.6342502, y: 0.36156353, z: 0.6342502}
+    - name: WildGrass_Bank_0_052
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 46.752644, y: 1.5, z: -0.95355475}
+      rotation: {x: 0, y: 86.0182, z: 0}
+      scale: {x: 0.8338745, y: 0.40158555, z: 0.8338745}
+    - name: WildGrass_Bank_0_058
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 50.993496, y: 1.5, z: -1.1354543}
+      rotation: {x: 0, y: 343.95413, z: 0}
+      scale: {x: 0.88974977, y: 0.3755567, z: 0.88974977}
+    - name: WildGrass_Bank_0_059
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 51.548336, y: 1.5, z: -0.97357595}
+      rotation: {x: 0, y: 128.88702, z: 0}
+      scale: {x: 0.94068867, y: 0.43566206, z: 0.94068867}
+    - name: WildGrass_Bank_0_069
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 58.662914, y: 1.5, z: -1.0977618}
+      rotation: {x: 0, y: 173.47229, z: 0}
+      scale: {x: 0.7375797, y: 0.4448617, z: 0.7375797}
+    - name: WildGrass_Bank_0_070
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 59.60804, y: 1.5, z: -0.9537518}
+      rotation: {x: 0, y: 322.26184, z: 0}
+      scale: {x: 0.8045717, y: 0.3542883, z: 0.8045717}
+    - name: WildGrass_Bank_0_071
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 60.158592, y: 1.5, z: -0.8771791}
+      rotation: {x: 0, y: 236.14207, z: 0}
+      scale: {x: 0.7903823, y: 0.31158543, z: 0.7903823}
+    - name: WildGrass_Bank_0_072
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 60.849815, y: 1.5, z: -1.141014}
+      rotation: {x: 0, y: 266.60034, z: 0}
+      scale: {x: 0.715236, y: 0.33961004, z: 0.715236}
+    - name: WildGrass_Bank_0_073
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 61.58005, y: 1.5, z: -1.0862783}
+      rotation: {x: 0, y: 241.19202, z: 0}
+      scale: {x: 0.66310734, y: 0.4781636, z: 0.66310734}
+    - name: WildGrass_Bank_0_074
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 62.377785, y: 1.5, z: -0.89161503}
+      rotation: {x: 0, y: 348.07892, z: 0}
+      scale: {x: 0.7353486, y: 0.31034625, z: 0.7353486}
+    - name: WildGrass_Bank_1_000
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 9.240586, y: 1.5, z: 2.0295255}
+      rotation: {x: 0, y: 119.4309, z: 0}
+      scale: {x: 0.6892233, y: 0.808688, z: 0.6892233}
+    - name: WildGrass_Bank_1_001
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 9.732808, y: 1.5, z: 1.9091649}
+      rotation: {x: 0, y: 4.038718, z: 0}
+      scale: {x: 0.8299058, y: 0.5708948, z: 0.8299058}
+    - name: WildGrass_Bank_1_002
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 10.627381, y: 1.5, z: 1.9763873}
+      rotation: {x: 0, y: 127.23286, z: 0}
+      scale: {x: 0.68094164, y: 0.78076196, z: 0.68094164}
+    - name: WildGrass_Bank_1_003
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 11.132673, y: 1.5, z: 1.9981123}
+      rotation: {x: 0, y: 81.569, z: 0}
+      scale: {x: 0.8491228, y: 0.8121709, z: 0.8491228}
+    - name: WildGrass_Bank_1_004
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 11.97361, y: 1.5, z: 1.9403064}
+      rotation: {x: 0, y: 286.42468, z: 0}
+      scale: {x: 0.6913999, y: 0.76052105, z: 0.6913999}
+    - name: WildGrass_Bank_1_015
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 20.064445, y: 1.5, z: 1.9474483}
+      rotation: {x: 0, y: 88.041115, z: 0}
+      scale: {x: 0.97600883, y: 0.7140368, z: 0.97600883}
+    - name: WildGrass_Bank_1_016
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 20.714378, y: 1.5, z: 2.080861}
+      rotation: {x: 0, y: 155.64224, z: 0}
+      scale: {x: 0.9377057, y: 0.61320525, z: 0.9377057}
+    - name: WildGrass_Bank_1_017
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 21.365295, y: 1.5, z: 1.8287426}
+      rotation: {x: 0, y: 309.45697, z: 0}
+      scale: {x: 0.8476631, y: 0.7115511, z: 0.8476631}
+    - name: WildGrass_Bank_1_018
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 22.230885, y: 1.5, z: 1.9388139}
+      rotation: {x: 0, y: 203.15839, z: 0}
+      scale: {x: 0.74214023, y: 0.53141487, z: 0.74214023}
+    - name: WildGrass_Bank_1_026
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 27.981339, y: 1.5, z: 1.9967165}
+      rotation: {x: 0, y: 300.38593, z: 0}
+      scale: {x: 0.6579024, y: 0.73011494, z: 0.6579024}
+    - name: WildGrass_Bank_1_027
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 28.529066, y: 1.5, z: 1.9401767}
+      rotation: {x: 0, y: 326.3872, z: 0}
+      scale: {x: 0.72441113, y: 0.79613096, z: 0.72441113}
+    - name: WildGrass_Bank_1_028
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 29.14058, y: 1.5, z: 1.8635162}
+      rotation: {x: 0, y: 24.176176, z: 0}
+      scale: {x: 0.72681475, y: 0.77764, z: 0.72681475}
+    - name: WildGrass_Bank_1_031
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 31.61081, y: 1.5, z: 1.839772}
+      rotation: {x: 0, y: 260.68637, z: 0}
+      scale: {x: 0.8356249, y: 0.6558548, z: 0.8356249}
+    - name: WildGrass_Bank_1_037
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 35.94325, y: 1.5, z: 1.9584091}
+      rotation: {x: 0, y: 339.57712, z: 0}
+      scale: {x: 0.6360984, y: 0.7761804, z: 0.6360984}
+    - name: WildGrass_Bank_1_038
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 36.40134, y: 1.5, z: 2.0639267}
+      rotation: {x: 0, y: 82.58065, z: 0}
+      scale: {x: 0.8933841, y: 0.5499272, z: 0.8933841}
+    - name: WildGrass_Bank_1_039
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 37.185383, y: 1.5, z: 1.8609716}
+      rotation: {x: 0, y: 334.95505, z: 0}
+      scale: {x: 0.8441376, y: 0.77888095, z: 0.8441376}
+    - name: WildGrass_Bank_1_040
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 38.02682, y: 1.5, z: 2.0660212}
+      rotation: {x: 0, y: 345.0855, z: 0}
+      scale: {x: 0.73559946, y: 0.6767236, z: 0.73559946}
+    - name: WildGrass_Bank_1_041
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 38.8258, y: 1.5, z: 2.0064995}
+      rotation: {x: 0, y: 355.6929, z: 0}
+      scale: {x: 0.7441842, y: 0.5633349, z: 0.7441842}
+    - name: WildGrass_Bank_1_049
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 44.376053, y: 1.5, z: 1.8319645}
+      rotation: {x: 0, y: 2.4350703, z: 0}
+      scale: {x: 0.6624699, y: 0.62024486, z: 0.6624699}
+    - name: WildGrass_Bank_1_050
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 45.067875, y: 1.5, z: 1.962762}
+      rotation: {x: 0, y: 115.82484, z: 0}
+      scale: {x: 0.94370854, y: 0.7548556, z: 0.94370854}
+    - name: WildGrass_Bank_1_051
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 45.76541, y: 1.5, z: 2.0513053}
+      rotation: {x: 0, y: 96.86717, z: 0}
+      scale: {x: 0.68349445, y: 0.5329808, z: 0.68349445}
+    - name: WildGrass_Bank_1_052
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 46.72928, y: 1.5, z: 2.0096245}
+      rotation: {x: 0, y: 113.32683, z: 0}
+      scale: {x: 0.89396334, y: 0.75334907, z: 0.89396334}
+    - name: WildGrass_Bank_1_055
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 48.716488, y: 1.5, z: 2.019478}
+      rotation: {x: 0, y: 26.147219, z: 0}
+      scale: {x: 0.68808955, y: 0.77047324, z: 0.68808955}
+    - name: WildGrass_Bank_1_058
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 50.80435, y: 1.5, z: 1.8000181}
+      rotation: {x: 0, y: 46.660362, z: 0}
+      scale: {x: 0.91514724, y: 0.52084666, z: 0.91514724}
+    - name: WildGrass_Bank_1_059
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 51.6439, y: 1.5, z: 1.9342827}
+      rotation: {x: 0, y: 99.50018, z: 0}
+      scale: {x: 0.9689237, y: 0.6732173, z: 0.9689237}
+    - name: WildGrass_Bank_1_068
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 58.239475, y: 1.5, z: 1.9610933}
+      rotation: {x: 0, y: 164.41974, z: 0}
+      scale: {x: 0.84769845, y: 0.7000804, z: 0.84769845}
+    - name: WildGrass_Bank_1_069
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 58.842533, y: 1.5, z: 2.0104656}
+      rotation: {x: 0, y: 70.50813, z: 0}
+      scale: {x: 0.88602906, y: 0.62756306, z: 0.88602906}
+    - name: WildGrass_Bank_1_070
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 59.520107, y: 1.5, z: 1.8776171}
+      rotation: {x: 0, y: 357.30466, z: 0}
+      scale: {x: 0.74677855, y: 0.61062413, z: 0.74677855}
+    - name: WildGrass_Bank_1_071
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 60.112377, y: 1.5, z: 2.0669942}
+      rotation: {x: 0, y: 312.25433, z: 0}
+      scale: {x: 0.9786057, y: 0.52116066, z: 0.9786057}
+    - name: WildGrass_Bank_1_072
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 61.104935, y: 1.5, z: 1.8359116}
+      rotation: {x: 0, y: 343.99207, z: 0}
+      scale: {x: 0.84976214, y: 0.71133316, z: 0.84976214}
+    - name: WildGrass_Bank_1_073
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 61.787273, y: 1.5, z: 1.822209}
+      rotation: {x: 0, y: 115.33769, z: 0}
+      scale: {x: 0.88219756, y: 0.7921763, z: 0.88219756}
+    - name: WildGrass_Bank_1_074
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 62.450783, y: 1.5, z: 1.8624185}
+      rotation: {x: 0, y: 116.802765, z: 0}
+      scale: {x: 0.8262199, y: 0.6852377, z: 0.8262199}
+    - name: WildGrass_Stair_7_0
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 8.282967, y: 1.5, z: -1.0445272}
+      rotation: {x: 0, y: 164.77763, z: 0}
+      scale: {x: 0.677453, y: 0.478638, z: 0.54691195}
+    - name: WildGrass_Stair_7_1
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 8.423219, y: 1.5, z: 1.7750344}
+      rotation: {x: 0, y: 254.43935, z: 0}
+      scale: {x: 0.5921127, y: 0.39069507, z: 0.6605149}
+    - name: WildGrass_Stair_7_2
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 8.421284, y: 1.5, z: 1.7920822}
+      rotation: {x: 0, y: 193.72313, z: 0}
+      scale: {x: 0.69893783, y: 0.50741607, z: 0.696743}
+    - name: UrbanApproach_DirtPath
+      group: 1
+      prefab: {fileID: 6772232766853496980, guid: a526e179aa112804c87858ea93f93eb0, type: 3}
+      position: {x: 59, y: 1.5, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_00
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 62.25, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_01
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 64.35, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_02
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 66.45, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_03
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 68.55, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_04
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 70.65, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_05
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 72.75, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_06
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 74.85, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_07
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 76.95, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_08
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 79.05, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Rail_09
+      group: 1
+      prefab: {fileID: 7397719361401807932, guid: 69540ad073e3af84eae55c53748b47a1, type: 3}
+      position: {x: 81.15, y: 1.5, z: 2.18}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Lamp_01
+      group: 1
+      prefab: {fileID: 7283730602725945802, guid: e688b3031defc7148af3fe93d2256ece, type: 3}
+      position: {x: 68, y: 1.5, z: 2.48}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Lamp_02
+      group: 1
+      prefab: {fileID: 7283730602725945802, guid: e688b3031defc7148af3fe93d2256ece, type: 3}
+      position: {x: 79.5, y: 1.5, z: 2.48}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Grass_00
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 64.5, y: 1.5, z: -1.09}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0.42, y: 0.42, z: 0.42}
+    - name: UrbanApproach_Grass_01
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 65.74, y: 1.5, z: 1.79}
+      rotation: {x: 0, y: 47, z: 0}
+      scale: {x: 0.5, y: 0.5, z: 0.5}
+    - name: UrbanApproach_Grass_02
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 66.98, y: 1.5, z: -1.09}
+      rotation: {x: 0, y: 94, z: 0}
+      scale: {x: 0.58, y: 0.58, z: 0.58}
+    - name: UrbanApproach_Grass_03
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 68.22, y: 1.5, z: 1.79}
+      rotation: {x: 0, y: 141, z: 0}
+      scale: {x: 0.42, y: 0.42, z: 0.42}
+    - name: UrbanApproach_Grass_04
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 69.46, y: 1.5, z: -1.09}
+      rotation: {x: 0, y: 188, z: 0}
+      scale: {x: 0.5, y: 0.5, z: 0.5}
+    - name: UrbanApproach_Grass_05
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 70.7, y: 1.5, z: 1.79}
+      rotation: {x: 0, y: 235, z: 0}
+      scale: {x: 0.58, y: 0.58, z: 0.58}
+    - name: UrbanApproach_Grass_06
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 71.94, y: 1.5, z: -1.09}
+      rotation: {x: 0, y: 282, z: 0}
+      scale: {x: 0.42, y: 0.42, z: 0.42}
+    - name: UrbanApproach_Grass_07
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 73.18, y: 1.5, z: 1.79}
+      rotation: {x: 0, y: 329, z: 0}
+      scale: {x: 0.5, y: 0.5, z: 0.5}
+    - name: UrbanApproach_Grass_08
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 74.42, y: 1.5, z: -1.09}
+      rotation: {x: 0, y: 376, z: 0}
+      scale: {x: 0.58, y: 0.58, z: 0.58}
+    - name: UrbanApproach_Grass_09
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 75.66, y: 1.5, z: 1.79}
+      rotation: {x: 0, y: 423, z: 0}
+      scale: {x: 0.42, y: 0.42, z: 0.42}
+    - name: UrbanApproach_Grass_10
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 76.9, y: 1.5, z: -1.09}
+      rotation: {x: 0, y: 470, z: 0}
+      scale: {x: 0.5, y: 0.5, z: 0.5}
+    - name: UrbanApproach_Grass_11
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 78.14, y: 1.5, z: 1.79}
+      rotation: {x: 0, y: 517, z: 0}
+      scale: {x: 0.58, y: 0.58, z: 0.58}
+    - name: UrbanApproach_Grass_12
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 79.38, y: 1.5, z: -1.09}
+      rotation: {x: 0, y: 564, z: 0}
+      scale: {x: 0.42, y: 0.42, z: 0.42}
+    - name: UrbanApproach_Grass_13
+      group: 1
+      prefab: {fileID: 4020733297217926796, guid: bbe2ea2e76675404d9b701792806c63e, type: 3}
+      position: {x: 80.62, y: 1.5, z: 1.79}
+      rotation: {x: 0, y: 611, z: 0}
+      scale: {x: 0.5, y: 0.5, z: 0.5}
+    - name: UrbanApproach_Rock
+      group: 4
+      prefab: {fileID: 8197251659544710313, guid: 10b647fb3e9d1c047b75af57459c2441, type: 3}
+      position: {x: 67.4, y: 1.74, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Shell
+      group: 4
+      prefab: {fileID: 172992526388715216, guid: e045befc3fd545e42be7f6cfb0b9e6b0, type: 3}
+      position: {x: 71.2, y: 1.615, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UrbanApproach_Bubble
+      group: 4
+      prefab: {fileID: 8310112034366520398, guid: d3aa80e9340e1654584f6a7931ca9ced, type: 3}
+      position: {x: 76.5, y: 2.02, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_00
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 3.9, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_01
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 9, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_02
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 14.1, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_03
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 19.2, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_04
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 24.3, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_05
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 29.4, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_06
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 34.5, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_07
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 39.6, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_08
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 44.7, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_09
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 49.8, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_10
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 54.899998, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_11
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 60, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_12
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 65.1, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_13
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 70.2, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_14
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 75.299995, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoreSplash_15
+      group: 2
+      prefab: {fileID: 2063024121132561910, guid: e10fce67a3a0dba419dca82fa108252b, type: 3}
+      position: {x: 80.4, y: -0.22499989, z: -1.49}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
   - name: 02_Cliff
     length: 80
     build: 0
@@ -1478,4 +2093,4 @@ MonoBehaviour:
     build: 0
     elements: []
   skybox: {fileID: 2100000, guid: ebdb3f97d3ac9464d9d5ef35d7a9808f, type: 2}
-  playerSpawn: {x: 0.65, y: 0.12, z: 0}
+  playerSpawn: {x: 3.65, y: 0.91, z: 0}

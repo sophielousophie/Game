@@ -60,7 +60,8 @@ public static class Level2Builder
 
     private static void Validate(Level2Layout layout)
     {
-        if (!(layout.playerSpeed > 0f) || !(layout.duration > 0f) || layout.sections.Count == 0
+        if (!(layout.playerSpeed > 0f) || !(layout.runSpeedMultiplier > 0f) || !(layout.duration > 0f)
+            || !(layout.cameraZoom > 0f) || layout.sections.Count == 0
             || layout.sections.Any(section => section == null || !(section.length > 0f))
             || !Mathf.Approximately(layout.sections.Sum(section => section.length), layout.TotalDistance))
         {
@@ -109,7 +110,9 @@ public static class Level2Builder
                     {
                         var instance = (GameObject)PrefabUtility.InstantiatePrefab(element.prefab, Get(element.group));
                         instance.name = element.name;
-                        instance.transform.SetLocalPositionAndRotation(element.position + Vector3.right * offset, Quaternion.Euler(element.rotation));
+                        Vector3 elevation = i == 0 && Level2SectionOne.IsCoastalLand(element)
+                            ? Vector3.up * layout.coastalElevationOffset : Vector3.zero;
+                        instance.transform.SetLocalPositionAndRotation(element.position + Vector3.right * offset + elevation, Quaternion.Euler(element.rotation));
                         instance.transform.localScale = element.scale;
                         PrefabUtility.RecordPrefabInstancePropertyModifications(instance);
                         PrefabUtility.RecordPrefabInstancePropertyModifications(instance.transform);
@@ -122,9 +125,11 @@ public static class Level2Builder
             }
 
             Transform checkpoint = Child(Get(Group.Checkpoints), "Checkpoint_S1_Start");
-            checkpoint.localPosition = layout.playerSpawn;
+            Vector3 playerSpawn = layout.playerSpawn + Vector3.up * layout.coastalElevationOffset;
+            checkpoint.localPosition = playerSpawn;
             Transform player = BuildPlayer(Get(Group.Gameplay), checkpoint, layout);
-            BuildCamera(Get(Group.Gameplay), player);
+            player.localPosition = playerSpawn;
+            BuildCamera(Get(Group.Gameplay), player, layout);
             BuildWeather(Get(Group.Gameplay), layout);
 
             Undo.RegisterCreatedObjectUndo(generated, BuildLabel);
@@ -208,8 +213,8 @@ public static class Level2Builder
         Transform player = Child(parent, "Ponyo_PLACEHOLDER");
         player.localPosition = layout.playerSpawn;
         player.gameObject.layer = 2;
-        Level2SectionOne.Primitive(player, "Ponyo_CoralCapsule_PLACEHOLDER", PrimitiveType.Capsule, Vector3.zero,
-            new Vector3(0.75f, 0.575f, 0.68f), new Color(1f, 0.36f, 0.35f));
+        Level2SectionOne.Primitive(player, "PlayerCapsuleVisual", PrimitiveType.Capsule, Vector3.zero,
+            new Vector3(0.75f, 0.575f, 0.75f), new Color(1f, 0.28f, 0.29f));
         Rigidbody2D body = player.gameObject.AddComponent<Rigidbody2D>();
         body.freezeRotation = true;
         body.gravityScale = 3f;
@@ -223,21 +228,21 @@ public static class Level2Builder
         var settings = new SerializedObject(movement);
         settings.FindProperty("groundProbe").objectReferenceValue = probe;
         settings.FindProperty("groundMask").intValue = ~(1 << 2);
-        settings.FindProperty("runSpeed").floatValue = layout.playerSpeed;
+        settings.FindProperty("runSpeed").floatValue = layout.RunSpeed;
         settings.ApplyModifiedPropertiesWithoutUndo();
         player.gameObject.AddComponent<CheckpointRespawner>().SetCheckpoint(checkpoint);
         return player;
     }
 
-    private static void BuildCamera(Transform parent, Transform player)
+    private static void BuildCamera(Transform parent, Transform player, Level2Layout layout)
     {
         Transform rig = Child(parent, "Main Camera");
-        rig.localPosition = new Vector3(5.3f, 2.05f, -14.5f);
+        rig.localPosition = new Vector3(5.3f, 2.05f + layout.coastalElevationOffset, -14.5f);
         rig.localRotation = Quaternion.Euler(6f, 0f, 0f);
         rig.gameObject.tag = "MainCamera";
         rig.gameObject.AddComponent<AudioListener>();
         Camera camera = rig.gameObject.AddComponent<Camera>();
-        camera.fieldOfView = 34f;
+        camera.fieldOfView = Level2SectionOne.CameraFieldOfView(layout.cameraZoom);
         camera.clearFlags = CameraClearFlags.Skybox;
         camera.farClipPlane = 100f;
         var follow = new SerializedObject(rig.gameObject.AddComponent<CameraFollow2D>());
