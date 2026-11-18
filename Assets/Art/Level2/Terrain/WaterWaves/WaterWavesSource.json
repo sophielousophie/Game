@@ -1,0 +1,13 @@
+{
+  "source": "3d_assets\\water_waves.glb",
+  "attribution": {
+    "author": "UJWAL (https://sketchfab.com/Ujwal-Chauhan)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/water-waves-142c2596d1944cd0bf4fc1f490c4c248",
+    "title": "water waves"
+  },
+  "sampled_frames": 128,
+  "source_morph_targets": 500,
+  "duration": 16.66666603088379,
+  "height_normalization": 83.94691224438098
+}

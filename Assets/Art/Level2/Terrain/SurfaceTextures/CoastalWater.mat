@@ -27,10 +27,25 @@ Material:
         m_Texture: {fileID: 2800000, guid: 569b5a58d46e16642b5e35d780bb5494, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ReflectionMap:
+        m_Texture: {fileID: 2800000, guid: 45b5a8cd690afdb4b9dc4453deb5b7e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaveMotion:
+        m_Texture: {fileID: 18700000, guid: 1cac48c9a7c25a94bbc1fb1a8c387b84, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _ReflectionRotation: 115
+    - _RippleAmplitude: 0.16
+    - _RippleSpeed: 0.75
     - _TextureStrength: 0.68
+    - _WaveHeight: 0.32
+    - _WaveTileSize: 18
     m_Colors:
+    - _FoamColor: {r: 0.78999996, g: 0.94, b: 0.91, a: 1}
+    - _ShoreBounds: {r: 42.8475, g: 0.65, b: 39.5525, a: 2.05}
     - _TileSize: {r: 5, g: 9, b: 0, a: 0}
     - _WaterColor: {r: 0.14999998, g: 0.62, b: 0.78, a: 1}
   m_BuildTextureStacks: []
